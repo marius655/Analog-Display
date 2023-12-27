@@ -14,6 +14,7 @@ struct MyEEPROMStruct {       //EEPROM Static
   bool esp_eingerichtet; //Merker ob server eingerichtet
   char ssid[64]; //W-LAN SSID max 64 Zeichen
   char password[64]; //W-LAN Passwort max 64 Zeichen
+  //char mqttPath[64];
 } eepromVar1;
 //Flash dynamisch
 bool LED_status; //LED BEleuchtung

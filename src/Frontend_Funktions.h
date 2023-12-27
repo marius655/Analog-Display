@@ -194,6 +194,10 @@ void serverHandleNetworkScan(){
     frontendServer.sendHeader("Access-Control-Allow-Origin", "*");
     frontendServer.send( 200, "application/json", message );
 }
+
+void serverHandleReboot(){
+  ESP.restart();
+}
     
 void serverHandleIndex(){
     debugFrontend("client requested index site.");
@@ -209,6 +213,7 @@ void setupFrontend(){
   frontendServer.on( "/", serverHandleIndex );
   frontendServer.on( "/settingsinput", serverHandleSettings );
   frontendServer.on( "/networks", serverHandleNetworkScan );
+  frontendServer.on( "/reboot", serverHandleReboot );
 }
 
 void frontendStart(){

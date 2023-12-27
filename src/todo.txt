@@ -1,0 +1,4 @@
+- [x] update function
+- [ ] action buttons (API nicht verhanden)
+- [ ] MQTT Pathvariablen; Die pfade sind nicht einstellbar
+- [ ] Modbus für jedes Register 
